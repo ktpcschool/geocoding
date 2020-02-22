@@ -1,3 +1,8 @@
+"""
+Copyright(c) 2020 Tatsuro Watanabe
+https://github.com/ktpcschool/geocoding
+"""
+
 import json
 import os
 

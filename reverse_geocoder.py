@@ -1,3 +1,8 @@
+"""
+Copyright(c) 2020 Tatsuro Watanabe
+https://github.com/ktpcschool/geocoding
+"""
+
 import json
 import os
 import re
@@ -27,7 +32,7 @@ def reverse_geocode(lon, lat):
     :return: 住所
     """
 
-    # Yahoo!リバースジオコーダAPIのURL。
+    # Yahoo!リバースジオコーダAPIのURL
     yahoo_reverse_geocoder_api_url = 'https://map.yahooapis.jp/geoapi/V1/reverseGeoCoder'
 
     # アプリケーションIDは環境変数から取得する。
@@ -43,7 +48,7 @@ def reverse_geocode(lon, lat):
     print(response)
     
     if 'Feature' not in response:
-        # リバースジオコーディングで結果が得られなかった場合はNoneを返す。
+        # リバースジオコーディングで結果が得られなかった場合はNoneを返す
         return None
 
     # Addressを取得
