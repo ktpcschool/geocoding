@@ -35,7 +35,6 @@ def get_elevation(lon, lat):
     # 国土地理院の標高APIのURL
     elevation_api_url = 'https://cyberjapandata2.gsi.go.jp/general/dem/scripts/getelevation.php'
 
-    # アプリケーションIDは環境変数から取得する。
     url = elevation_api_url + '?' + urlencode({
         'lon': lon,
         'lat': lat,
